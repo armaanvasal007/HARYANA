@@ -1,11 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    hello
-</body>
-</html>
+import java.util.*;
+public class calculator
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("ENTER FIRST NUMBER");
+        int a=sc.nextInt();
+        System.out.println("ENTER SECOND NUMBER");
+        int b=sc.nextInt();
+        System.out.println("ENTER CHOICE");
+        int ch=sc.nextInt();
+        switch(ch)
+        {
+            case 1:
+            System.out.println(a+b);
+            break;
+            case 2:
+            System.out.println(a-b);
+            break;
+            case 3:
+            System.out.println(a*b);
+            break;
+            case 4:
+            System.out.println(a/b);
+            break;
+            default:
+            System.out.println("PLZ ENTER CORRECT CHOICE");
+        }
+    }
+}
